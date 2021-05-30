@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:nonas/home_page.dart';
 import 'package:nonas/login_page.dart';
 
+import 'data.dart';
+import 'detail.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,14 +16,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Kodeversitas',
+      title: 'fashion',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.brown,
-        fontFamily: 'Nunito',
+        platform: TargetPlatform.iOS,
       ),
       home: LoginPage(),
       routes: routes,
+      onGenerateRoute: (settings) => generateRoute(settings),
+    );
+  }
+
+  generateRoute(RouteSettings settings) {
+    final path = settings.name.split('/');
+    final title = path[1];
+
+    Fashion fashion = fashions.firstWhere((it) => it.title == title);
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (context) => Detail(fashion),
     );
   }
 }
