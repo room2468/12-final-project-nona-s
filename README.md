@@ -22,6 +22,15 @@ Berikut hasil run yang dibuat setelah di klik login maka masuk ke dalam :
 
 ![3](https://user-images.githubusercontent.com/64391805/119916473-cbc6d980-bf8e-11eb-9c03-f594f0654e7a.JPG)
 
+# Progres Senin, 31 Mei 2021
+
+Progress Membuat tampilan beranda dan kategori
+
+![4](https://user-images.githubusercontent.com/64391805/120117097-c4cde000-c1b5-11eb-8d57-a7ef78b3e020.jpeg)
+![5](https://user-images.githubusercontent.com/64391805/120117099-c8f9fd80-c1b5-11eb-96fa-fcf40ca04d6c.jpeg)
+![6](https://user-images.githubusercontent.com/64391805/120117102-cbf4ee00-c1b5-11eb-8ab7-0d30082b1e7d.jpeg)
+
+
 
 
 This project is a starting point for a Flutter application.
