@@ -82,7 +82,14 @@ class _RecommendasiState extends State<Recommendasi>
           ],
         ),
       ),
-      //body
+      body: TabBarView(
+        controller: controller,
+        children: <Widget>[
+          tabpagesatu.PageSatu(),
+          tabpagedua.PageDua(),
+          tabpagetiga.PageTiga(),
+        ],
+      ),
     );
   }
 }
