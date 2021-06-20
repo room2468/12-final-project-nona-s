@@ -6,11 +6,12 @@ class RatingBar extends StatelessWidget {
   final Color color;
 
   RatingBar(
-      {this.starCount = 5, this.rating = 0.0, this.color = Colors.black87});
+      {this.starCount = 5, this.rating = 0.0, this.color = Colors.yellow});
 
   ///create star
   Widget buildStar(BuildContext context, int index) {
     IconData icName = Icons.star;
+    // ignore: unused_local_variable
     Color icColor = color;
 
     if (index >= rating) {
@@ -20,7 +21,7 @@ class RatingBar extends StatelessWidget {
       icName = Icons.star_half;
     }
 
-    return Icon(icName, size: 16.0, color: icColor);
+    return Icon(icName, size: 16.0, color: Colors.yellow);
   }
 
   @override
