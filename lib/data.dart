@@ -9,7 +9,7 @@ class Fashion {
 
 final List<Fashion> fashions = [
   Fashion(
-      'Baju Atasan Laki1',
+      'Baju Atasan Laki AL1',
       'Tersedia Ukuran: M, L, XL',
       'Rp 50.000',
       'assets/hemlaki1.JPG',
@@ -17,7 +17,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Laki2',
+      'Baju Atasan Laki AL2',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/hemlaki2.jpg',
@@ -25,7 +25,7 @@ final List<Fashion> fashions = [
       4.5,
       1),
   Fashion(
-      'Baju Atasan Laki3',
+      'Baju Atasan Laki AL3',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/hemlaki3.jpg',
@@ -33,7 +33,7 @@ final List<Fashion> fashions = [
       5.0,
       1),
   Fashion(
-      'Celana Bawahan Laki1',
+      'Celana Bawahan Laki BL1',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/celana1.jpg',
@@ -41,7 +41,7 @@ final List<Fashion> fashions = [
       3.0,
       1),
   Fashion(
-      'Celana Bawahan Laki2',
+      'Celana Bawahan Laki BL2',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/celana2.jpg',
@@ -49,7 +49,7 @@ final List<Fashion> fashions = [
       4.8,
       1),
   Fashion(
-      'Celana Bawahan Laki3',
+      'Celana Bawahan Laki BL3',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/celana3.jpg',
@@ -57,7 +57,7 @@ final List<Fashion> fashions = [
       4.5,
       1),
   Fashion(
-      'Baju Atasan Wanita1',
+      'Baju Atasan Wanita AW1',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan1.jpeg',
@@ -65,7 +65,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Wanita2',
+      'Baju Atasan Wanita AW2',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan2.jpeg',
@@ -73,7 +73,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Wanita3',
+      'Baju Atasan Wanita AW3',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan3.jpeg',
@@ -81,7 +81,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Rok Wanita1',
+      'Rok Wanita RN1',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/rok1.jpeg',
@@ -89,7 +89,7 @@ final List<Fashion> fashions = [
       4.8,
       1),
   Fashion(
-      'Rok Wanita2',
+      'Rok Wanita RN2',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/rok2.jpeg',
@@ -97,7 +97,7 @@ final List<Fashion> fashions = [
       4.5,
       1),
   Fashion(
-      'Rok Wanita3',
+      'Rok Wanita RN3',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/rok3.jpeg',
@@ -105,7 +105,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Wanita4',
+      'Baju Atasan Wanita AW4',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan4.jpeg',
@@ -113,7 +113,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Wanita5',
+      'Baju Atasan Wanita AW5',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan5.jpg',
@@ -121,7 +121,7 @@ final List<Fashion> fashions = [
       3.5,
       1),
   Fashion(
-      'Baju Atasan Wanita6',
+      'Baju Atasan Wanita AW6',
       'Tersedia Ukuran: S, M, L, XL',
       'Rp 50.000',
       'assets/tartan6.jpg',
@@ -139,7 +139,6 @@ final List<Fashion> fashions = [
 //       this.rating, this.pages);
 // }
 
-// // ignore: non_constant_identifier_names
 // final List<AtasanWanita> AtasanWanitas = [
 //   AtasanWanita(
 //       'Baju Atasan Wanita1',
@@ -200,7 +199,6 @@ final List<Fashion> fashions = [
 //       this.rating, this.pages);
 // }
 
-// // ignore: non_constant_identifier_names
 // final List<BawahanWanita> BawahanWanitas = [
 //   BawahanWanita(
 //       'Baju Atasan Wanita1',
@@ -261,8 +259,7 @@ final List<Fashion> fashions = [
 //       this.rating, this.pages);
 // }
 
-// // ignore: non_constant_identifier_names
-// final List<AtasanPria> AtasanPrias = [
+// final List<AtasanPria> atasanPrias = [
 //   AtasanPria(
 //       'Baju Atasan Pria1',
 //       'Tersedia Ukuran: M, L, XL',
@@ -322,7 +319,6 @@ final List<Fashion> fashions = [
 //       this.rating, this.pages);
 // }
 
-// // ignore: non_constant_identifier_names
 // final List<BawahanPria> BawahanPrias = [
 //   BawahanPria(
 //       'Celana Bawahan Pria1',
