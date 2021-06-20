@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nonas/AtasanWanita.dart';
+import 'package:nonas/Pembayaran.dart';
 import 'package:nonas/home_page.dart';
 import 'package:nonas/login_page.dart';
 
@@ -11,6 +13,8 @@ class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
     LoginPage.tag: (context) => LoginPage(),
     HomePage.tag: (context) => HomePage(),
+    AtasanWanitaPage.tag: (context) => AtasanWanitaPage(),
+    Pembayaran.tag: (context) => Pembayaran(),
   };
 
   @override
