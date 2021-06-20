@@ -51,7 +51,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          //Navigator.of(context).pushNamed(AtasanWanitaPage.tag);
+                          Navigator.of(context).pushNamed(AtasanWanitaPage.tag);
                         },
                       ),
                     ),
@@ -72,7 +72,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          //Navigator.of(context).pushNamed(RokWanitaPage.tag);
+                          Navigator.of(context).pushNamed(RokWanitaPage.tag);
                         },
                       ),
                     ),
@@ -93,7 +93,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          //Navigator.of(context).pushNamed(AtasanPriaPage.tag);
+                          Navigator.of(context).pushNamed(AtasanPriaPage.tag);
                         },
                       ),
                     ),
@@ -114,7 +114,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          //Navigator.of(context).pushNamed(BawahanPriaPage.tag);
+                          Navigator.of(context).pushNamed(BawahanPriaPage.tag);
                         },
                       ),
                     ),
