@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nonas/recomendasi.dart';
+import 'package:nonas/AtasanPria.dart';
+import 'package:nonas/AtasanWanita.dart';
+import 'package:nonas/CelanaPria.dart';
+import 'package:nonas/RokWanita.dart';
 
 class PageDua extends StatelessWidget {
   @override
@@ -17,7 +20,7 @@ class PageDua extends StatelessWidget {
               //background color keseluruhan
               backgroundColor: Colors.brown[500],
               title: Text(
-                "Rekomendasi Pakaian",
+                "Kategori Produk",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30.0,
@@ -27,36 +30,11 @@ class PageDua extends StatelessWidget {
 
               centerTitle: true,
             ),
-            //backgroundColor: Colors.lightGreenAccent,
             body: new Stack(children: <Widget>[
               new Container(
                 margin: EdgeInsets.all(8),
                 child: Column(
                   children: [
-                    // Container(
-                    //   decoration: BoxDecoration(
-                    //     color: Colors.white,
-                    //     borderRadius: BorderRadius.circular(10),
-                    //   ),
-                    //   width: double.infinity,
-                    //   height: 50,
-                    //   // ignore: deprecated_member_use
-                    //   child: RaisedButton(
-                    //     color: Colors.brown,
-                    //     child: Text(
-                    //       "Rekomendasi Pakaian",
-                    //       style: TextStyle(
-                    //         color: Colors.black,
-                    //         fontSize: 20.0,
-                    //         fontWeight: FontWeight.bold,
-                    //       ),
-                    //     ),
-                    //     onPressed: () {
-                    //       Navigator.of(context).pushNamed(Recommendasi.tag);
-                    //     },
-                    //   ),
-                    // ),
-                    Divider(),
                     Divider(),
                     Container(
                       width: double.infinity,
@@ -73,7 +51,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          //Navigator.of(context).pushNamed(AtasanWanitaPage.tag);
                         },
                       ),
                     ),
@@ -86,7 +64,7 @@ class PageDua extends StatelessWidget {
                       child: RaisedButton(
                         color: Colors.redAccent,
                         child: Text(
-                          "Bawahan Wanita",
+                          "Rok Wanita",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
@@ -94,7 +72,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          //Navigator.of(context).pushNamed(RokWanitaPage.tag);
                         },
                       ),
                     ),
@@ -106,7 +84,6 @@ class PageDua extends StatelessWidget {
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.white,
-                        //textColor: Colors.white,
                         child: Text(
                           "Atasan Pria",
                           style: TextStyle(
@@ -116,7 +93,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          //Navigator.of(context).pushNamed(AtasanPriaPage.tag);
                         },
                       ),
                     ),
@@ -128,9 +105,8 @@ class PageDua extends StatelessWidget {
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.redAccent,
-                        //textColor: Colors.white,
                         child: Text(
-                          "Bawahan Pria",
+                          "Celana Pria",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
@@ -138,7 +114,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          //Navigator.of(context).pushNamed(BawahanPriaPage.tag);
                         },
                       ),
                     ),
@@ -160,7 +136,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          // Navigator.of(context).pushNamed(Recommendasi.tag);
                         },
                       ),
                     ),
@@ -182,7 +158,7 @@ class PageDua extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(Recommendasi.tag);
+                          // Navigator.of(context).pushNamed(Recommendasi.tag);
                         },
                       ),
                     ),
