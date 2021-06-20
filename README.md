@@ -49,8 +49,9 @@ Progress membuat menu search
 
 Progres membuat detail search dan pembayaran
 
-![13](https://user-images.githubusercontent.com/71867557/122682501-f1f53780-d223-11eb-986e-88049effff25.JPG)
 ![12](https://user-images.githubusercontent.com/71867557/122682500-f02b7400-d223-11eb-8ded-1da108377f1e.JPG)
+![13](https://user-images.githubusercontent.com/71867557/122682501-f1f53780-d223-11eb-986e-88049effff25.JPG)
+
 
 
 This project is a starting point for a Flutter application.
