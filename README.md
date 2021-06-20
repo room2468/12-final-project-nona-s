@@ -45,6 +45,14 @@ Progress membuat menu search
 ![10](https://user-images.githubusercontent.com/72908077/122682427-6da2b480-d223-11eb-9b5f-2b92c5c84910.JPG)
 
 
+# Progres Senin, 21 Juni 2021
+
+Progres membuat detail search dan pembayaran
+
+![13](https://user-images.githubusercontent.com/71867557/122682501-f1f53780-d223-11eb-986e-88049effff25.JPG)
+![12](https://user-images.githubusercontent.com/71867557/122682500-f02b7400-d223-11eb-8ded-1da108377f1e.JPG)
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
