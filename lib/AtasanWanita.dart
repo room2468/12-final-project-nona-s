@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:nonas/Pembayaran.dart';
+import 'package:nonas/Pembayaran.dart';
 
 class AtasanWanitaPage extends StatefulWidget {
   static String tag = 'AtasanWanita-page';
@@ -125,7 +125,7 @@ class DataSearch extends SearchDelegate<String> {
               ),
             ),
             onPressed: () {
-              //Navigator.of(context).pushNamed(Pembayaran.tag);
+              Navigator.of(context).pushNamed(Pembayaran.tag);
             },
           ),
         ),
