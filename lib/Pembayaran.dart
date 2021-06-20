@@ -97,9 +97,7 @@ class _PembayaranState extends State<Pembayaran> {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-            //backgroundColor: Colors.lightGreenAccent,
             appBar: AppBar(
-              //background color keseluruhan
               backgroundColor: Colors.brown,
               title: Text("PEMBAYARAN"),
               centerTitle: true,
@@ -108,12 +106,7 @@ class _PembayaranState extends State<Pembayaran> {
               Container(
                 margin: EdgeInsets.all(8),
                 child: Column(
-                  children: [
-                    //menambahkan gambar
-                    // Image.asset(
-                    //   "images/metrik.jpg",
-                    //   width: 200,
-                    // ),
+                  children: [                
                     Divider(),
                     Text(
                       "Rp. 50.000/item",
@@ -140,7 +133,7 @@ class _PembayaranState extends State<Pembayaran> {
                     Result(
                       result: _result,
                     ),
-                    //untuk memanggil perhitungan rumus
+                    //untuk memanggil perhitungan rumus kembalian
                     Convert(
                       konvertHandler: _kembalian,
                     ),
