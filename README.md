@@ -37,6 +37,13 @@ Progress membuat tampilan kategori
 ![8](https://user-images.githubusercontent.com/64391805/121612474-ae146c80-ca84-11eb-8ce4-26f541ceea7f.JPG)
 
 
+# Progres Minggu, 20 Juni 2021
+
+Progress membuat menu search
+
+![11](https://user-images.githubusercontent.com/72908077/122682426-6c718780-d223-11eb-8da9-a9adc393edea.JPG)
+![10](https://user-images.githubusercontent.com/72908077/122682427-6da2b480-d223-11eb-9b5f-2b92c5c84910.JPG)
+
 
 This project is a starting point for a Flutter application.
 
