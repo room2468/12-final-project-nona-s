@@ -31,6 +31,11 @@ Progress Membuat tampilan beranda dan kategori
 ![6](https://user-images.githubusercontent.com/64391805/120117102-cbf4ee00-c1b5-11eb-8ab7-0d30082b1e7d.jpeg)
 
 
+# Progres Senin, 07 Juni 2021
+
+Progress membuat tampilan kategori
+![8](https://user-images.githubusercontent.com/64391805/121612474-ae146c80-ca84-11eb-8ce4-26f541ceea7f.JPG)
+
 
 
 This project is a starting point for a Flutter application.
