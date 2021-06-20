@@ -34,6 +34,7 @@ Progress Membuat tampilan beranda dan kategori
 # Progres Senin, 07 Juni 2021
 
 Progress membuat tampilan kategori
+
 ![8](https://user-images.githubusercontent.com/64391805/121612474-ae146c80-ca84-11eb-8ce4-26f541ceea7f.JPG)
 
 
@@ -51,6 +52,9 @@ Progres membuat detail search dan pembayaran
 
 ![12](https://user-images.githubusercontent.com/71867557/122682500-f02b7400-d223-11eb-8ded-1da108377f1e.JPG)
 ![13](https://user-images.githubusercontent.com/71867557/122682501-f1f53780-d223-11eb-986e-88049effff25.JPG)
+![14](https://user-images.githubusercontent.com/64391805/122682618-ba3abf80-d224-11eb-857e-bc2ce57fbdbb.JPG)
+![15](https://user-images.githubusercontent.com/64391805/122682621-be66dd00-d224-11eb-94f6-7d6432956323.JPG)
+
 
 
 
