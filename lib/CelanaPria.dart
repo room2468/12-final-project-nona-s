@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'nonas/Pembayaran.dart';
 
 class BawahanPriaPage extends StatefulWidget {
   static String tag = 'BawahanPria-page';
@@ -22,10 +23,6 @@ class _BawahanPriaPageState extends State<BawahanPriaPage> {
             onPressed: () {
               showSearch(context: context, delegate: DataSearch());
             }),
-        IconButton(
-          icon: Icon(Icons.shopping_cart, color: Colors.white),
-          onPressed: () {},
-        ),
       ],
     );
 
@@ -49,6 +46,10 @@ class _BawahanPriaPageState extends State<BawahanPriaPage> {
       ),
     );
 
+    final paragraf2 = Padding(
+        padding: EdgeInsets.all(8.0),
+        child: new Image.asset('assets/celanalaki.jpeg'));
+
     final body = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
@@ -59,7 +60,7 @@ class _BawahanPriaPageState extends State<BawahanPriaPage> {
         ]),
       ),
       child: Column(
-        children: <Widget>[bar, search, paragraf1],
+        children: <Widget>[bar, search, paragraf1, paragraf2],
       ),
     );
 
@@ -71,9 +72,9 @@ class _BawahanPriaPageState extends State<BawahanPriaPage> {
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final bawahanPria = ["BP1", "BP2", "BP3", "BP4", "BP5", "BP6"];
+  final bawahanPria = ["BP1", "BP2", "BP3", "BP4"];
 
-  final recentBawahanPria = ["BP1", "BP2", "BP3", "BP4", "BP5", "BP6"];
+  final recentBawahanPria = ["BP1", "BP2", "BP3", "BP4"];
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -93,23 +94,27 @@ class DataSearch extends SearchDelegate<String> {
       home: Scaffold(
           body: Column(children: <Widget>[
         Image(
-          image: AssetImage('assets/tartan7.jpeg'),
+          image: AssetImage('assets/celana4.jpg'),
+          height: 300,
         ),
         Text(
-          'Detail Produk Bawahan Pria',
-          style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+          'Detail Produk',
+          style:
+              TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 2.0),
         ),
         Text('By NONAS'),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              '\t\t\t\t\tDetail Produk\t\t\t\t\t: Bawahan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Bawahan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Bawahan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Bawahan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Bawahan Pria',
+              '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKategori\t: Celana Pria\n\t\t\t\t\t\t\t\t\t\t\tMerk\t\t: Zara\n\t\t\t\t\t\t\t\t\tBahan\t\t\t\t: Katun\n\t\t\tStock\t\t\t\t\t: 10\n\tDikirim Dari\t\t\t\t\t: Malang',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, fontFamily: "Serif", height: 2.0),
+              style: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.bold, height: 2.0),
             ),
           ],
         ),
+        Divider(),
         Container(
           width: double.infinity,
           height: 50,
@@ -125,7 +130,7 @@ class DataSearch extends SearchDelegate<String> {
               ),
             ),
             onPressed: () {
-              Navigator.of(context).pushNamed(BawahanPriaPage.tag);
+              Navigator.of(context).pushNamed(Pembayaran.tag);
             },
           ),
         ),
