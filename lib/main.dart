@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:nonas/AtasanPria.dart';
 import 'package:nonas/AtasanWanita.dart';
-import 'package:nonas/Pembayaran.dart';
+import 'package:nonas/CelanaPria.dart';
+import 'package:nonas/InstagramPage.dart';
+import 'package:nonas/RokWanita.dart';
+import 'package:nonas/cetakStruk.dart';
 import 'package:nonas/home_page.dart';
 import 'package:nonas/login_page.dart';
+import 'package:nonas/Pembayaran.dart';
 
 import 'data.dart';
 import 'detail.dart';
@@ -15,6 +20,11 @@ class MyApp extends StatelessWidget {
     HomePage.tag: (context) => HomePage(),
     AtasanWanitaPage.tag: (context) => AtasanWanitaPage(),
     Pembayaran.tag: (context) => Pembayaran(),
+    RokWanitaPage.tag: (context) => RokWanitaPage(),
+    BawahanPriaPage.tag: (context) => BawahanPriaPage(),
+    AtasanPriaPage.tag: (context) => AtasanPriaPage(),
+    StrukPage.tag: (context) => StrukPage(),
+    InstagramPage.tag: (context) => InstagramPage()
   };
 
   @override
