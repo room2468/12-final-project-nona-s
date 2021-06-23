@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nonas/Pembayaran.dart';
 
 class AtasanPriaPage extends StatefulWidget {
   static String tag = 'AtasanPria-page';
@@ -22,10 +23,6 @@ class _AtasanPriaPageState extends State<AtasanPriaPage> {
             onPressed: () {
               showSearch(context: context, delegate: DataSearch());
             }),
-        IconButton(
-          icon: Icon(Icons.shopping_cart, color: Colors.white),
-          onPressed: () {},
-        ),
       ],
     );
 
@@ -35,7 +32,7 @@ class _AtasanPriaPageState extends State<AtasanPriaPage> {
         padding: EdgeInsets.all(15.0),
         child: CircleAvatar(
           radius: 70.0,
-          backgroundImage: AssetImage('assets/tartan.jpeg'),
+          backgroundImage: AssetImage('assets/nonaskotak.jpeg'),
         ),
       ),
     );
@@ -49,6 +46,10 @@ class _AtasanPriaPageState extends State<AtasanPriaPage> {
       ),
     );
 
+    final paragraf2 = Container(
+        //padding: EdgeInsets.all(3.0),
+        child: new Image.asset('assets/bajupria.jpeg'));
+
     final body = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
@@ -59,7 +60,7 @@ class _AtasanPriaPageState extends State<AtasanPriaPage> {
         ]),
       ),
       child: Column(
-        children: <Widget>[bar, search, paragraf1],
+        children: <Widget>[bar, search, paragraf1, paragraf2],
       ),
     );
 
@@ -71,9 +72,9 @@ class _AtasanPriaPageState extends State<AtasanPriaPage> {
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final atasanPria = ["AP1", "AP2", "AP3", "AP4", "AP5", "AP6"];
+  final atasanPria = ["AP1", "AP2", "AP3"];
 
-  final recentAtasanPria = ["AP1", "AP2", "AP3", "AP4", "AP5", "AP6"];
+  final recentAtasanPria = ["AP1", "AP2", "AP3"];
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -93,23 +94,27 @@ class DataSearch extends SearchDelegate<String> {
       home: Scaffold(
           body: Column(children: <Widget>[
         Image(
-          image: AssetImage('assets/tartan7.jpeg'),
+          image: AssetImage('assets/hemlaki2.jpg'),
+          height: 300,
         ),
         Text(
-          'Detail Produk Atasan Pria',
-          style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+          'Detail Produk',
+          style:
+              TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 2.0),
         ),
         Text('By NONAS'),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              '\t\t\t\t\tDetail Produk\t\t\t\t\t: Atasan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Atasan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Atasan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Atasan Pria\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Atasan Pria',
+              '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKategori\t: Kemeja Pria\n\t\t\t\t\t\t\t\t\t\t\tMerk\t\t: Zara\n\t\t\t\t\t\t\t\t\tBahan\t\t\t\t: Katun\n\t\t\t\t\tStock\t\t\t: 10\n\tDikirim Dari\t\t\t\t\t: Malang',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, fontFamily: "Serif", height: 2.0),
+              style: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.bold, height: 2.0),
             ),
           ],
         ),
+        Divider(),
         Container(
           width: double.infinity,
           height: 50,
@@ -125,7 +130,7 @@ class DataSearch extends SearchDelegate<String> {
               ),
             ),
             onPressed: () {
-              Navigator.of(context).pushNamed(AtasanPriaPage.tag);
+              Navigator.of(context).pushNamed(Pembayaran.tag);
             },
           ),
         ),
