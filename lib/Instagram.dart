@@ -9,3 +9,17 @@ class Instagram extends StatelessWidget {
   Instagram({
     @required this.selectedUrl,
   });
+  
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: WebView(
+        initialUrl: selectedUrl,
+        javascriptMode: JavascriptMode.unrestricted,
+        onWebViewCreated: (WebViewController webViewController) {
+          _controller.complete(webViewController);
+        },
+      ),
+    );
+  }
+}
