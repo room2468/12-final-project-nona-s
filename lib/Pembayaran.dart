@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nonas/cetakStruk.dart';
 import 'convert.dart';
 import 'input.dart';
 import 'result.dart';
@@ -11,7 +12,6 @@ class Pembayaran extends StatefulWidget {
 }
 
 class _PembayaranState extends State<Pembayaran> {
-  //Inisialisasi untuk melakukan imput data
   TextEditingController etInput = new TextEditingController();
 
   double _inputUser = 0;
@@ -91,13 +91,20 @@ class _PembayaranState extends State<Pembayaran> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
+            //backgroundColor: Colors.lightGreenAccent,
             appBar: AppBar(
+              leading: IconButton(
+                icon: Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              //background color keseluruhan
               backgroundColor: Colors.brown,
               title: Text("PEMBAYARAN"),
               centerTitle: true,
@@ -106,7 +113,12 @@ class _PembayaranState extends State<Pembayaran> {
               Container(
                 margin: EdgeInsets.all(8),
                 child: Column(
-                  children: [                
+                  children: [
+                    //menambahkan gambar
+                    // Image.asset(
+                    //   "images/metrik.jpg",
+                    //   width: 200,
+                    // ),
                     Divider(),
                     Text(
                       "Rp. 50.000/item",
@@ -121,7 +133,6 @@ class _PembayaranState extends State<Pembayaran> {
                     //untuk menampilkan pilihan / tujuan yg akan di konvert
                     buildDropdownButton(),
                     //untuk menampilkan pilihan / tujuan yg akan di konvert
-
                     Divider(),
                     Total(
                       total: _total,
@@ -133,9 +144,30 @@ class _PembayaranState extends State<Pembayaran> {
                     Result(
                       result: _result,
                     ),
-                    //untuk memanggil perhitungan rumus kembalian
+                    //untuk memanggil perhitungan rumus
                     Convert(
                       konvertHandler: _kembalian,
+                    ),
+                    Divider(),
+                    Divider(),
+                    Container(
+                      width: double.infinity,
+                      height: 50,
+                      // ignore: deprecated_member_use
+                      child: RaisedButton(
+                        color: Colors.brown,
+                        child: Text(
+                          "CETAK STRUK PEMBELIAN",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed(StrukPage.tag);
+                        },
+                      ),
                     ),
                   ],
                 ),
