@@ -40,8 +40,8 @@ class _StrukPageState extends State<StrukPage> {
             fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold),
       ),
     );
-    
-     final struk = Container(
+
+    final struk = Container(
         margin: EdgeInsets.all(5),
         height: 100,
         width: 270,
@@ -69,7 +69,7 @@ class _StrukPageState extends State<StrukPage> {
         alignment: Alignment.topLeft,
         color: Colors.amber[100],
         child: Text(
-          '\n 2 Baju Wanita\t\t\t\t\t\t    : Rp.50.000/pcs',
+          '\n 4 Baju Wanita\t\t\t\t\t\t    : Rp.50.000/pcs',
           style: TextStyle(
               fontSize: 15, color: Colors.black, fontWeight: FontWeight.bold),
         ));

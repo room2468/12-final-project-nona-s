@@ -95,7 +95,7 @@ class DataSearch extends SearchDelegate<String> {
           body: Column(children: <Widget>[
         Image(
           image: AssetImage('assets/celana4.jpg'),
-          height: 300,
+          height: 290,
         ),
         Text(
           'Detail Produk',

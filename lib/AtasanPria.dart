@@ -117,7 +117,7 @@ class DataSearch extends SearchDelegate<String> {
         Divider(),
         Container(
           width: double.infinity,
-          height: 50,
+          height: 45,
           // ignore: deprecated_member_use
           child: RaisedButton(
             color: Colors.brown,
