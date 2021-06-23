@@ -6,3 +6,13 @@ class InstagramPage extends StatefulWidget {
   @override
   _InstagramPageState createState() => new _InstagramPageState();
 }
+
+class _InstagramPageState extends State<InstagramPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Instagram(
+      selectedUrl: "https://www.instagram.com/tartanonaa/",
+    ));
+  }
+}
