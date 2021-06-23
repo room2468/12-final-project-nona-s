@@ -17,7 +17,7 @@ class Total extends StatelessWidget {
         children: [
           Text(
             "Total Harga",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           Text(
             total.toStringAsFixed(1),

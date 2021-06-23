@@ -17,7 +17,7 @@ class Result extends StatelessWidget {
         children: [
           Text(
             "Total Kembalian",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           Text(
             result.toStringAsFixed(1),
