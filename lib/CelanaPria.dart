@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'nonas/Pembayaran.dart';
+import 'package:nonas/Pembayaran.dart';
 
 class BawahanPriaPage extends StatefulWidget {
   static String tag = 'BawahanPria-page';
