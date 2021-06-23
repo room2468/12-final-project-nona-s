@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  webview_flutter: ^0.3.22+1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -45,6 +46,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logo.jpeg
+    - assets/nonaskotak.jpeg
+    - assets/rok.jpeg
     - assets/rok1.jpeg
     - assets/rok2.jpeg
     - assets/rok3.jpeg
@@ -64,6 +67,11 @@ flutter:
     - assets/hemlaki1.JPG
     - assets/hemlaki2.jpg
     - assets/hemlaki3.jpg
+    - assets/bajuWanita.jpeg
+    - assets/bajupria.jpeg
+    - assets/celanalaki.jpeg
+    - assets/struk.jpeg
+    - assets/diskon.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
