@@ -23,11 +23,10 @@ class PageDua extends StatelessWidget {
                 "Kategori Produk",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30.0,
+                  fontSize: 35.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-
               centerTitle: true,
             ),
             body: new Stack(children: <Widget>[
@@ -36,17 +35,19 @@ class PageDua extends StatelessWidget {
                 child: Column(
                   children: [
                     Divider(),
+                    Divider(),
+                    Divider(),
                     Container(
                       width: double.infinity,
-                      height: 50,
+                      height: 75,
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.white,
                         child: Text(
-                          "Atasan Wanita",
+                          "Kemeja Wanita",
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 20.0,
+                            fontSize: 25.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -57,9 +58,10 @@ class PageDua extends StatelessWidget {
                     ),
                     Divider(),
                     Divider(),
+                    Divider(),
                     Container(
                       width: double.infinity,
-                      height: 50,
+                      height: 75,
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.redAccent,
@@ -67,7 +69,7 @@ class PageDua extends StatelessWidget {
                           "Rok Wanita",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 25.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -78,17 +80,18 @@ class PageDua extends StatelessWidget {
                     ),
                     Divider(),
                     Divider(),
+                    Divider(),
                     Container(
                       width: double.infinity,
-                      height: 50,
+                      height: 75,
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.white,
                         child: Text(
-                          "Atasan Pria",
+                          "Kemeja Pria",
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 20.0,
+                            fontSize: 25.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -99,9 +102,10 @@ class PageDua extends StatelessWidget {
                     ),
                     Divider(),
                     Divider(),
+                    Divider(),
                     Container(
                       width: double.infinity,
-                      height: 50,
+                      height: 75,
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: Colors.redAccent,
@@ -109,7 +113,7 @@ class PageDua extends StatelessWidget {
                           "Celana Pria",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 25.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -118,52 +122,6 @@ class PageDua extends StatelessWidget {
                         },
                       ),
                     ),
-                    Divider(),
-                    Divider(),
-                    Container(
-                      width: double.infinity,
-                      height: 50,
-                      // ignore: deprecated_member_use
-                      child: RaisedButton(
-                        color: Colors.white,
-                        textColor: Colors.white,
-                        child: Text(
-                          "Mukenah",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        onPressed: () {
-                          // Navigator.of(context).pushNamed(Recommendasi.tag);
-                        },
-                      ),
-                    ),
-                    Divider(),
-                    Divider(),
-                    Container(
-                      width: double.infinity,
-                      height: 50,
-                      // ignore: deprecated_member_use
-                      child: RaisedButton(
-                        color: Colors.redAccent,
-                        // textColor: Colors.white,
-                        child: Text(
-                          "Gift",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        onPressed: () {
-                          // Navigator.of(context).pushNamed(Recommendasi.tag);
-                        },
-                      ),
-                    ),
-                    Divider(),
-                    Divider(),
                   ],
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uasprojectsemester4/Pembayaran.dart';
 
 class RokWanitaPage extends StatefulWidget {
   static String tag = 'RokWanita-page';
@@ -22,10 +23,6 @@ class _RokWanitaPageState extends State<RokWanitaPage> {
             onPressed: () {
               showSearch(context: context, delegate: DataSearch());
             }),
-        IconButton(
-          icon: Icon(Icons.shopping_cart, color: Colors.white),
-          onPressed: () {},
-        ),
       ],
     );
 
@@ -35,7 +32,7 @@ class _RokWanitaPageState extends State<RokWanitaPage> {
         padding: EdgeInsets.all(15.0),
         child: CircleAvatar(
           radius: 70.0,
-          backgroundImage: AssetImage('assets/tartan.jpeg'),
+          backgroundImage: AssetImage('assets/nonaskotak.jpeg'),
         ),
       ),
     );
@@ -49,6 +46,10 @@ class _RokWanitaPageState extends State<RokWanitaPage> {
       ),
     );
 
+    final paragraf2 = Padding(
+        padding: EdgeInsets.all(8.0),
+        child: new Image.asset('assets/rok.jpeg'));
+
     final body = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
@@ -59,21 +60,20 @@ class _RokWanitaPageState extends State<RokWanitaPage> {
         ]),
       ),
       child: Column(
-        children: <Widget>[bar, search, paragraf1],
+        children: <Widget>[bar, search, paragraf1, paragraf2],
       ),
     );
 
     return Scaffold(
       body: body,
     );
-    //drawer: Drawer(),
   }
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final rokWanita = ["RN1", "RN2", "RN3", "RN4", "RN5", "RN6"];
+  final rokWanita = ["RN1", "RN2", "RN3"];
 
-  final recentRokWanita = ["RN1", "RN2", "RN3", "RN4", "RN5", "RN6"];
+  final recentRokWanita = ["RN1", "RN2", "RN3"];
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -93,23 +93,27 @@ class DataSearch extends SearchDelegate<String> {
       home: Scaffold(
           body: Column(children: <Widget>[
         Image(
-          image: AssetImage('assets/tartan7.jpeg'),
+          image: AssetImage('assets/rok1.jpeg'),
+          height: 300,
         ),
         Text(
-          'Detail Produk Rok Wanita',
-          style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+          'Detail Produk',
+          style:
+              TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 2.0),
         ),
         Text('By NONAS'),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              '\t\t\t\t\tDetail Produk\t\t\t\t\t: Rok Wanita\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Rok Wanita\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Rok Wanita\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Rok Wanita\n\t\t\t\t\tDetail Produk\t\t\t\t\t: Rok Wanita',
+              '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKategori\t: Rok Wanita\n\t\t\t\t\t\t\t\t\t\t\tMerk\t\t\t\t: Zara\n\t\t\t\t\t\t\t\t\t\tBahan\t\t\t\t\t: Katun\n\t\t\t\t\tStock\t\t\t\t\t: 10\n\t\t\t\t\t\t\t\tDikirim Dari\t: Malang',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, fontFamily: "Serif", height: 2.0),
+              style: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.bold, height: 2.0),
             ),
           ],
         ),
+        Divider(),
         Container(
           width: double.infinity,
           height: 50,
@@ -125,7 +129,7 @@ class DataSearch extends SearchDelegate<String> {
               ),
             ),
             onPressed: () {
-              Navigator.of(context).pushNamed(RokWanitaPage.tag);
+              Navigator.of(context).pushNamed(Pembayaran.tag);
             },
           ),
         ),
